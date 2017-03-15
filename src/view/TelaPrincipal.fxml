@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="438.0" prefWidth="587.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.TelaPrincipalController">
+   <children>
+      <BorderPane layoutX="7.0" layoutY="54.0" prefHeight="372.0" prefWidth="387.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Minha Conta">
+                  <items>
+                    <MenuItem fx:id="myAccButton" mnemonicParsing="false" text="Alterar Senha" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="exitButton" mnemonicParsing="false" text="Sair" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Oferta Disciplina">
+                  <items>
+                    <MenuItem fx:id="newOfferButton" mnemonicParsing="false" text="CadastroOferta" />
+                        <MenuItem fx:id="listOfferButton" mnemonicParsing="false" text="Listar Ofertas" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Sobre">
+                  <items>
+                    <MenuItem fx:id="aboutButton" mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <TitledPane fx:id="defaultPane" animated="false" prefHeight="413.0" prefWidth="587.0" text="untitled" BorderPane.alignment="CENTER">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </TitledPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
